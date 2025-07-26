@@ -1,3 +1,5 @@
+let nivel = "";
+
 let xpDarthVader = 5230;
 let xpLukeSkywalker = 9000;
 
@@ -29,19 +31,20 @@ console.log(
 );
 
 if (xpFinalLuke <= 1000) {
-  console.log(LukeSkywalker + " é um herói do tipo FERRO");
+  nivel = "Ferro";
 } else if (xpFinalLuke >= 1001 && xpFinalLuke <= 2000) {
-  console.log(LukeSkywalker + " é um herói do tipo Bronze");
+  nivel = "Bronze";
 } else if (xpFinalLuke >= 2001 && xpFinalLuke <= 5000) {
-  console.log(LukeSkywalker + " é um herói do tipo Prata");
+  nivel = "Prata";
 } else if (xpFinalLuke >= 5001 && xpFinalLuke <= 7000) {
-  console.log(LukeSkywalker + " é um herói do tipo Ouro");
+  nivel = "Ouro";
 } else if (xpFinalLuke >= 7001 && xpFinalLuke <= 8000) {
-  console.log(LukeSkywalker + " é um herói do tipo Platina");
+  nivel = "Platina";
 } else if (xpFinalLuke >= 8001 && xpFinalLuke <= 9000) {
-  console.log(LukeSkywalker + " é um herói do tipo Ascendente");
+  nivel = "Ascendente";
 } else if (xpFinalLuke >= 9001 && xpFinalLuke <= 10000) {
-  console.log(LukeSkywalker + " é um herói do tipo Imortal");
-} else if (xpFinalLuke >= 10001) {
-  console.log(LukeSkywalker + " é um herói do tipo Radiante");
+  nivel = "Imortal";
+} else {
+  nivel = "Radiante";
 }
+console.log("O Herói de nome " + LukeSkywalker + " esta no nível de " + nivel);
