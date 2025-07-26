@@ -10,6 +10,13 @@ let numeroDeLutas = 5;
 let pontosPorLuta = 100;
 let totalXpLuta = numeroDeLutas * pontosPorLuta;
 
+let lutas = 0;
+
+do {
+  lutas++;
+  console.log(LukeSkywalker, "venceu a luta", lutas, "!");
+} while (lutas < numeroDeLutas);
+
 let xpFinalLuke = xpLukeSkywalker + totalXpLuta;
 let xpFinalDart = xpDarthVader - totalXpLuta;
 
